@@ -1,5 +1,5 @@
 import "./about.css"
-import {DynamicFeed, ImportantDevices, Speed, Telegram} from "@material-ui/icons";
+import {DynamicFeed, ImportantDevices, Telegram} from "@material-ui/icons";
 
 const About = () => {
     return (
