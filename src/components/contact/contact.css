@@ -1,0 +1,101 @@
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 80px;
+
+}
+
+.contactTitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+
+.contactItem {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.contactItem>label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    transform: translate(10px, 10px) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+
+}
+
+.contactItem:focus-within label {
+    transform: translate(5px, -15px) scale(0.75);
+}
+
+.contactItem .active {
+    transform: translate(5px, -15px) scale(0.75);
+}
+
+.contactItem>input {
+    height: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #8fd98f;
+    margin-bottom: 20px;
+   background-color: transparent;
+    color: white;
+}
+.contactItem>input:focus {
+    outline: none;
+}
+
+.contactItem>textarea {
+    height: 100px;
+    padding: 10px;
+    overflow-y: scroll;
+    border: 1px solid #8fd98f;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contactItem>textarea:focus {
+    outline: none;
+}
+
+.contactButton {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactTitle {
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .contactItem {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-right: 20px;
+        position: relative;
+    }
+}

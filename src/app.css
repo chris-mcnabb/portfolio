@@ -1,0 +1,75 @@
+
+
+
+.container {
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+
+    padding-top: 20px;
+}
+
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.portfolioContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.contactContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+
+.css-selector {
+    background: linear-gradient(270deg, #7cb9ea, #0c87ea);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 12s ease infinite;
+    -moz-animation: AnimationName 12s ease infinite;
+    animation: AnimationName 12s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+

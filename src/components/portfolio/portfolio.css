@@ -1,0 +1,149 @@
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 150px;
+}
+
+
+
+.portfolioTopTitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+
+
+.portfolioBottom {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.portfolioItem {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+
+}
+
+.portfolioInstruction_Large {
+    width: 100%;
+    text-align: center;
+
+}
+
+.portfolioInstruction_Small {
+    width: 100%;
+    text-align: center;
+    transform: translate(0px, -20px) scale(1);
+    opacity: 0;
+}
+
+.portfolioItem .portfolioImg  {
+    transition: all 2s ease;
+}
+
+.portfolioItem .portfolioItemDesc  {
+    transition: all 2s ease;
+}
+
+.portfolioItem:hover .portfolioImg {
+    opacity: .1;
+
+}
+
+.portfolioImg {
+    width: 550px;
+    height: 550px;
+    border-radius: 10px;
+    object-fit: contain;
+    z-index: 10;
+
+}
+
+.portfolioItemDesc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.portfolioItemTitle {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.portfolioText {
+    margin-bottom: 5px;
+}
+
+
+
+.portfolioItem:hover .portfolioItemDesc {
+    opacity: 1;
+
+}
+
+.portfolioLinkButton {
+    width: 50%;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center !important;
+    justify-content: center;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+
+
+}
+
+.gitIcon {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        margin-bottom: 50px;
+    }
+    .portfolioTopTitle {
+        font-size: 27px;
+        margin-bottom: 2px;
+    }
+    .portfolioInstruction_Large{
+        width: 80%;
+        font-size: 15px;
+        opacity: 0;
+    }
+    .portfolioInstruction_Small {
+        width: 80%;
+        font-size: 15px;
+        text-align: center;
+        transform: translate(0px, -20px) scale(1);
+        opacity: 1;
+    }
+    .portfolioImg {
+        width: 350px;
+        height: 350px;
+    }
+}

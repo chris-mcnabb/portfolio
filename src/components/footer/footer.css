@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerText {
+font-size: 20px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerText {
+        font-size: 13px;
+        font-weight: 300;
+    }
+}

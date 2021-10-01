@@ -1,0 +1,123 @@
+.about {
+    color: white;
+    width: 100%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutTop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+
+}
+
+.aboutTopTitle {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.aboutTopIntro {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.aboutBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutBottomContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    border: 1px solid #8fd98f;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.aboutBottomIcon {
+    font-size: 40px !important;
+}
+
+
+.aboutBottomContainerTitle {
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.aboutBottomText {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .aboutTop {
+        width: 80%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .aboutTopTitle {
+        font-size: 27px;
+
+        margin-bottom: 2px;
+    }
+
+    aboutTopIntro {
+        font-size: 15px;
+    }
+
+    .aboutBottom {
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .aboutBottomContainer {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .aboutBottomIcon {
+        font-size: 27px !important;
+    }
+
+    .aboutBottomContainerTitle {
+        font-size: 18px;
+        margin-bottom: 1px;
+    }
+
+    .aboutBottomText {
+        font-size: 11px;
+        font-weight: 300;
+    }
+}

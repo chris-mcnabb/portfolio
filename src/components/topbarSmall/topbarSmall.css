@@ -1,0 +1,68 @@
+.topbarSmall {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+
+}
+
+.topbarSmallWrapper {
+    height: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topLeftSmall {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logoSmall {
+    color: #8fd98f;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.topRightSmall {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    width: 32px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    cursor: pointer;
+
+}
+
+.line-1, .line-2, .line-3 {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+
+}
+
+
+
+.hamburger.active>span.line-1 {
+    transform-origin: left;
+    transform: rotate(45deg);
+    transition: .5s ease;
+}
+
+.hamburger.active>span.line-2 {
+  opacity: 0;
+
+}
+
+.hamburger.active>span.line-3 {
+    transform-origin: left;
+    transform: rotate(-45deg);
+    transition: .5s ease;
+}
