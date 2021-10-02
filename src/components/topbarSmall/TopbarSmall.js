@@ -10,7 +10,7 @@ const TopbarSmall = () => {
             <Menu isActive={isActive} setIsActive={setIsActive}/>
             <div className="topbarSmallWrapper">
             <div className="topLeftSmall">
-                <span className="logoSmall">Chris McNabb Portfolio</span>
+                <span className="logoSmall"><a className="linkLogo" href="#home">Chris McNabb Portfolio</a></span>
             </div>
             <div className="topRightSmall">
                 <div className={"hamburger "+ (isActive && "active")}onClick={()=> setIsActive(!isActive)}>
